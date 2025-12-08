@@ -1,19 +1,19 @@
 # Comparación: Programación Tradicional vs Programación Orientada a Objetos (POO)
 
-## 📌 Objetivo
-Este documento compara dos enfoques diferentes para resolver el mismo problema: **calcular el promedio semanal de temperaturas**. Uno utiliza programación tradicional (estructurada) y el otro utiliza programación orientada a objetos.
+## Objetivo
+Este documento compara dos enfoques diferentes para resolver el mismo problema: calcular el promedio semanal de temperaturas. Uno utiliza programación tradicional (estructurada) y el otro utiliza programación orientada a objetos.
 
 ---
 
-## 🔍 Análisis Comparativo
+## Análisis Comparativo
 
 ### 1. **Enfoque de Programación Tradicional**
 
 #### Características:
-- **Funciones independientes** que procesan datos
-- **Datos separados de las funciones** que los manipulan
-- **Flujo secuencial**: entrada → procesamiento → salida
-- **No hay encapsulamiento** de datos
+- Funciones independientes que procesan datos
+- Datos separados de las funciones que los manipulan
+- Flujo secuencial: entrada → procesamiento → salida
+- No hay encapsulamiento de datos
 
 #### Estructura del código:
 ```python
@@ -31,16 +31,16 @@ def main():
 ```
 
 #### Ventajas:
-✅ **Fácil de entender** para principiantes  
-✅ **Código simple y directo**  
-✅ **Menos líneas de código**  
-✅ **Ideal para programas pequeños**  
+**Fácil de entender** para principiantes  
+**Código simple y directo**  
+**Menos líneas de código**  
+**Ideal para programas pequeños**  
 
 #### Desventajas:
-❌ **Datos dispersos** en el programa  
-❌ **Difícil de mantener** si crece el proyecto  
-❌ **Sin protección de datos** (cualquier función puede modificarlos)  
-❌ **Reutilización limitada** de código  
+**Datos dispersos** en el programa  
+**Difícil de mantener** si crece el proyecto  
+**Sin protección de datos** (cualquier función puede modificarlos)  
+**Reutilización limitada** de código  
 
 ---
 
@@ -69,21 +69,21 @@ class ClimaSemanal:
 ```
 
 #### Ventajas:
-✅ **Encapsulamiento**: datos protegidos con `__`  
-✅ **Organización**: datos y métodos juntos  
-✅ **Mantenibilidad**: código más fácil de actualizar  
-✅ **Reutilización**: se puede heredar o extender  
-✅ **Seguridad**: control sobre cómo se accede a los datos  
+**Encapsulamiento**: datos protegidos con `__`  
+**Organización**: datos y métodos juntos  
+**Mantenibilidad**: código más fácil de actualizar  
+**Reutilización**: se puede heredar o extender  
+**Seguridad**: control sobre cómo se accede a los datos  
 
 #### Desventajas:
-❌ **Más líneas de código**  
-❌ **Curva de aprendizaje mayor**  
-❌ **Puede ser excesivo** para programas muy simples  
-❌ **Requiere entender conceptos** como clases y objetos  
+**Más líneas de código**  
+**Curva de aprendizaje mayor**  
+**Puede ser excesivo** para programas muy simples  
+**Requiere entender conceptos** como clases y objetos  
 
 ---
 
-## 📊 Tabla Comparativa
+## Tabla Comparativa
 
 | Aspecto | Tradicional | POO |
 |--------|------------|-----|
@@ -98,7 +98,7 @@ class ClimaSemanal:
 
 ---
 
-## 🔄 Flujo de Ejecución
+## Flujo de Ejecución
 
 ### Programación Tradicional:
 ```
@@ -119,7 +119,7 @@ main()
 
 ---
 
-## 📝 Implementación en Este Proyecto
+## Implementación en Este Proyecto
 
 ### Archivo: `programacion_tradicional.py`
 **Enfoque**: Estructurado y funcional
@@ -138,7 +138,7 @@ main()
 
 ---
 
-## 🎯 Conclusiones
+## Conclusiones
 
 ### ¿Cuándo usar Programación Tradicional?
 - Scripts simples y puntuales
@@ -162,7 +162,7 @@ Ambos enfoques **resuelven el mismo problema correctamente**, pero:
 
 ---
 
-## 📚 Conceptos POO Aplicados
+## Conceptos POO Aplicados
 
 ### 1. **Encapsulamiento**
 ```python
@@ -178,17 +178,17 @@ Cada método tiene una responsabilidad clara y específica.
 
 ---
 
-## ✅ Requisitos Cumplidos
+## Requisitos Cumplidos
 
-- ✅ Implementación en programación tradicional (funciones)
-- ✅ Implementación en POO (clase con encapsulamiento)
-- ✅ Ambos programas resuelven el mismo problema
-- ✅ Código con comentarios claros
-- ✅ Documento comparativo explicativo
-- ✅ Buenas prácticas de programación en ambos
+-  Implementación en programación tradicional (funciones)
+-  Implementación en POO (clase con encapsulamiento)
+-  Ambos programas resuelven el mismo problema
+-  Código con comentarios claros
+-  Documento comparativo explicativo
+-  Buenas prácticas de programación en ambos
 
 ---
 
 **Autor**: Franklin Parra  
-**Fecha**: Diciembre 2025  
+**Fecha**: 8 de diciembre de 2025  
 **Curso**: Programación Orientada a Objetos - Segundo Semestre
