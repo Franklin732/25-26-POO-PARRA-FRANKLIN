@@ -1,10 +1,10 @@
 # Semana 4: Ejemplos del Mundo Real con POO
 
-## 📋 Descripción
+##  Descripción
 
 Este directorio contiene ejemplos prácticos de Programación Orientada a Objetos (POO) aplicados a situaciones del mundo real.
 
-## 🏦 Sistema Bancario Básico
+##  Sistema Bancario Básico
 
 **Archivo:** `EjemplosMundoReal_POO/ejemplo_banco.py`
 
@@ -36,20 +36,20 @@ Representa un cliente del banco.
   - `agregar_cuenta(cuenta)`: Asocia una cuenta al cliente
   - `mostrar_cuentas()`: Muestra todas las cuentas del cliente
 
-## 🚀 Cómo ejecutar
+##  Cómo ejecutar
 
 ```bash
 python Semana4/EjemplosMundoReal_POO/ejemplo_banco.py
 ```
 
-## 💡 Conceptos POO Aplicados
+##  Conceptos POO Aplicados
 
-- ✅ **Clases y Objetos**: Modelado de entidades del mundo real
-- ✅ **Atributos**: Características de cada objeto
-- ✅ **Métodos**: Comportamientos y acciones
-- ✅ **Encapsulamiento**: Datos y métodos organizados en clases
-- ✅ **Interacción entre objetos**: Cliente gestiona múltiples CuentaBancaria
+-  **Clases y Objetos**: Modelado de entidades del mundo real
+-  **Atributos**: Características de cada objeto
+-  **Métodos**: Comportamientos y acciones
+-  **Encapsulamiento**: Datos y métodos organizados en clases
+-  **Interacción entre objetos**: Cliente gestiona múltiples CuentaBancaria
 
-## 📚 Autor
+##  Autor
 
-Franklin Parra - Curso de Programación Orientada a Objetos
+Franklin Parra - Materia de Programación Orientada a Objetos
