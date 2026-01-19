@@ -16,10 +16,10 @@ Identificadores:
 Todos los identificadores siguen la convención snake_case de Python.
 
 Cumplimiento de la Tarea:
-✓ Uso de diferentes tipos de datos (int, float, string, boolean)
-✓ Identificadores descriptivos en snake_case
-✓ Comentarios explicativos en el código
-✓ Programa funcional sin errores
+Uso de diferentes tipos de datos (int, float, string, boolean)
+Identificadores descriptivos en snake_case
+Comentarios explicativos en el código
+Programa funcional sin errores
 
 Autor: Franklin Parra
 Curso: Programación Orientada a Objetos
@@ -80,12 +80,12 @@ print("-" * 60)
 # Mostrar mensaje personalizado según si tiene acceso o no
 if tiene_acceso:
     # Mensaje para mayores de edad
-    print(f"✓ ¡Bienvenido(a) {nombre_usuario}!")
+    print(f"Bienvenido {nombre_usuario}!")
     print("  Usted cumple con la edad mínima requerida.")
     print("  Puede acceder al evento sin restricciones.")
 else:
     # Mensaje para menores de edad
-    print(f"✗ Lo sentimos, {nombre_usuario}.")
+    print(f"Lo sentimos, {nombre_usuario}.")
     print("  Usted no cumple con la edad mínima requerida (18 años).")
     print("  No puede acceder a este evento en este momento.")
 
