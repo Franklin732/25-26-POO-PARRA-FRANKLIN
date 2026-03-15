@@ -39,7 +39,7 @@ Representa un cliente del banco.
 ##  Cómo ejecutar
 
 ```bash
-python semana_4/EjemplosMundoReal_POO/ejemplo_banco.py
+python Semana4/EjemplosMundoReal_POO/ejemplo_banco.py
 ```
 
 ##  Conceptos POO Aplicados
