@@ -11,6 +11,8 @@ Requisitos:
 - Confirmación al eliminar un evento
 """
 
+import json
+import pathlib
 import tkinter as tk
 from tkinter import ttk, messagebox
 
@@ -37,6 +39,10 @@ class AgendaApp(tk.Tk):
         self._create_event_tree()
         # Botones de acción
         self._create_action_buttons()
+
+        # Archivo local para persistencia de eventos
+        self.data_file = pathlib.Path(__file__).resolve().parent / "agenda_data.json"
+        self._load_events()
 
     def _create_frames(self):
         """Crear frames para organizar la UI."""
@@ -127,7 +133,8 @@ class AgendaApp(tk.Tk):
         # Agregar al Treeview
         self.event_tree.insert("", "end", values=(fecha, hora, descripcion))
 
-        # Limpiar campos de entrada
+        # Guardar en disco y limpiar campos de entrada
+        self._save_events()
         self._limpiar_campos()
 
     def _get_fecha(self) -> str:
@@ -146,6 +153,39 @@ class AgendaApp(tk.Tk):
         self.time_entry.delete(0, tk.END)
         self.desc_entry.delete(0, tk.END)
 
+    def _load_events(self):
+        """Cargar eventos desde el archivo JSON y mostrarlos en el Treeview."""
+        if not self.data_file.exists():
+            return
+
+        try:
+            with self.data_file.open("r", encoding="utf-8") as f:
+                datos = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return
+
+        for evento in datos:
+            self.event_tree.insert(
+                "", "end", values=(
+                    evento.get("fecha", ""),
+                    evento.get("hora", ""),
+                    evento.get("descripcion", ""),
+                ),
+            )
+
+    def _save_events(self):
+        """Guardar los eventos actuales del Treeview en el archivo JSON."""
+        eventos = []
+        for item_id in self.event_tree.get_children():
+            fecha, hora, descripcion = self.event_tree.item(item_id, "values")
+            eventos.append({"fecha": fecha, "hora": hora, "descripcion": descripcion})
+
+        try:
+            with self.data_file.open("w", encoding="utf-8") as f:
+                json.dump(eventos, f, ensure_ascii=False, indent=2)
+        except OSError:
+            messagebox.showerror("Error", "No se pudo guardar el archivo de datos.")
+
     def eliminar_evento(self):
         """Eliminar el evento seleccionado del Treeview."""
         seleccionado = self.event_tree.selection()
@@ -162,6 +202,7 @@ class AgendaApp(tk.Tk):
 
         if messagebox.askyesno("Confirmar eliminación", pregunta):
             self.event_tree.delete(item_id)
+            self._save_events()
 
 
 def main():
